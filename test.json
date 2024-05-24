@@ -1,0 +1,14 @@
+{
+    "Wordlist":[
+        {
+            "word":"write",
+            "mean":"書く"
+        },
+        {
+            "word":"play",
+            "mean":"遊ぶ"
+        }
+    ],
+
+    "Highscore":20
+}

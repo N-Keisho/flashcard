@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>暗記モード</title>
+        <meta name="description" content="英単語暗記ができるサイトです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <script src="scripts/index.js"></script>
+        <div class="main">
+            <div class="sidebar">
+                <button class="sidebarBtn" name="indexBtn" onclick="location.href='index.html'">暗記モード</button>
+                <button class="sidebarBtn" name="inputBtn" onclick="location.href='input.html'">編集モード</button>
+            </div>
+            <div class="flex column center">
+                <h1>暗記モード</h1>
+
+                <div id="display"></div>
+                <div>
+                    <div class="flex">
+                        <h4 class="param" for="remainingTime">残り時間：</h4>
+                        <p id="remainingTime">0</p>
+                    </div>
+                    <div class="flex">
+                        <h4 class="param" for="remainingProblem">問題数：</h4>
+                        <p id="remainingProblem">0/0</p>
+                    </div>
+                </div>
+                <div id="answer">
+                    <div class="flex">
+                        <h3 for="player-ans">解答：</h3>
+                        <input type="text" id="player-ans" name="player-ansInput">
+                        <p>　</p>
+                        <button id="player-ans" name="player-ansBtn" onclick="flashcard.answer()">解答する</button>
+                    </div>
+                    <ul id="answerlog"></ul>
+                </div>  
+            </div>
+
+            <div class="flex column center" id="config">
+                <h2>各種設定</h2>
+                <div class="flex column center">
+                    <h3 for="inputFile">単語帳ファイル</h3>
+                    <input type="file" id="inputFile" accept=".json">
+                </div>
+                <div class="flex">
+                    <h3 for="displayed-sec">表示時間　</h3>
+                    <input type="number" id="displayed-sec" name="displayed-secInput" value="10">
+                    <p>秒</p>
+                </div>
+                <div class="flex">
+                    <h3 for="displayed-times">問題数　</h3>
+                    <input type="number" id="displayed-times" name="displayed-timesInput" value="2">
+                    <p>問</p>
+                </div>
+                <button id="startbtn" onclick="flashcard.flash()">スタート</button>
+                <p></p>
+            </div>
+        </div>
+    </body>
+</html>

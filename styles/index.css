@@ -1,0 +1,154 @@
+h1 {
+    color: #364e96;/*文字色*/
+    border: solid 3px #364e96;/*線色*/
+    padding: 0.3em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+  }
+
+h2 {
+    text-decoration: underline;
+}
+
+
+h3 {
+    color: #4896b8;/*文字色*/
+    padding: 0.3em;/*文字周りの余白*/
+}
+
+h4 {
+    color: #4292b3;/*文字色*/
+    margin: 5px;
+}
+
+hr {
+    width: 300px;
+    align-self: center;
+}
+
+
+select {
+    font-size: 15px;
+}
+
+
+input {
+    max-width: 100px;
+}
+
+#inputFile {
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+
+
+div.margin {
+    margin-bottom: 1rem;
+}
+
+div.flex {
+    display: flex;
+    align-items: center;
+}
+
+div.column {
+    flex-direction: column;
+}
+
+div.center {
+    align-items: center;
+    justify-content: center;
+}
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+div.sidebar {
+    background-color: rgb(200, 238, 236);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: calc(70px + 4rem);
+    margin-right: 2rem;
+}
+
+button {
+    display: inline-block;
+    color: #4283a3; /* 文字色 */
+    border: 2px solid #4283a3; /* 線幅・種類・色 */
+    background: #fff; /* 背景色 */
+    font-weight: bold; /* 文字の太さ */
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+button:hover {
+    color: #fff; /* 文字色 */
+    background: #4283a3; /* 背景色 */
+}
+
+button.sidebarBtn {
+    margin-top: 2rem;
+}
+
+p.log {
+    color: #d43232;
+}
+
+li.correct {
+    color: #4dd432;
+}
+li.incorrect {
+    color: #ff5334;
+}
+
+
+
+#display {
+    width: 500px;
+    height: calc( 70px + 4rem);
+    text-align: center;
+    background-color: rgb(190, 250, 230);
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+#outputdiv {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    width: calc(200px + 2rem);
+    min-height: 3rem;
+    text-align: center;
+    align-items: center;
+    border: 2px skyblue dashed; 
+    background: #f3fbff;
+}
+
+#config {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: calc(300px + 2rem);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px rgb(203, 255, 169) dashed;
+    background: #fbffe5;
+}
+
+#param {
+    color: #4292b3;/*文字色*/
+    padding: 0.3em;/*文字周りの余白*/
+}
+
+#answerlog {
+    list-style: none;
+    height: 200;
+}

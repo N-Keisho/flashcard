@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>編集モード</title>
+        <meta name="description" content="英単語暗記ができるサイトです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <script src="scripts/input.js"></script>
+        <div class="main">
+            <div class="sidebar">
+                <button class="sidebarBtn" name="indexBtn" onclick="location.href='index.html'">暗記モード</button>
+                <button class="sidebarBtn" name="inputBtn" onclick="location.href='input.html'">編集モード</button>
+            </div>
+            <div class="flex column center">
+
+                <h1>編集モード</h1>
+                <p>単語の登録や削除が行えます</p>
+                <hr>
+
+                <div class="flex column center">
+                    <h3 for="inputFile">単語帳ファイル</h3>
+                    <input type="file" id="inputFile" accept=".json">
+                    <p><small>※ 新規作成の場合、選択する必要はありません</small></p>
+                </div>
+                <hr>
+
+                <div class="flex column center" id="entry">
+                    <h3>単語登録</h3>
+                    <div class="flex margin">
+                        <h4 for="entryword">単語　</h4>
+                        <input type="text" id="entryword" name="entrywordInput">
+                    </div>
+                    <div class="flex margin">
+                        <h4 for="entrymean">意味　</h4>
+                        <input type="text" id="entrymean" name="entrymeanInput">
+                    </div>
+                    <button id="entry" name="entryBtn" onclick="filemanager.inputdata()">登録</button>
+                    <p class="log" id="entrylog"></p>
+                </div>
+                <hr>
+
+                <div class="flex column center" id="delete">
+                    <h3>単語削除</h3>
+                    <div class="flex margin">
+                        <select id="deleteSelect">
+                            <option value="">選択</option>
+                            <option value="単語">単語</option>
+                            <option value="意味">意味</option>
+                            <option value="番号">番号</option>
+                        </select>
+                        <input type="text" id="deleteInput" name="deletewordInput">
+                    </div>
+                    <button id="deleteBtn" name="deleteBtn" onclick="filemanager.deletedata()">削除</button>
+                    <p class="log" id="deletelog"></p>
+                </div>
+                <hr>
+                
+                <div class="flex column center" id="download">
+                    <h3>単語帳ダウンロード</h3>
+                    <button id="downloadBtn" name="downloadBtn">ダウンロード</button>
+                    <p></p>
+                </div>
+
+
+            </div>
+            <div id="outputdiv">
+                <h2>登録済み単語</h2>
+                <ol class="margin" id="output"></ol>
+            </div>
+        </div>
+    </body>
+</html>
