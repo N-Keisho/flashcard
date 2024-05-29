@@ -4,7 +4,9 @@
 
 初めてJavaScriptに触れたため，非同期処理に悩まされました．
 
-製作時間は約1日です．
+GitHubPageを利用して公開しています．
+
+Page：https://n-keisho.github.io/flashcard/
 
 
 ## 発表資料
